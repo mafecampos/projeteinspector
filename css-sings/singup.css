@@ -22,11 +22,17 @@ img {
   transform: translateX(-50%);
 }
 
+.detalhe {
+  z-index: 1; 
+  pointer-events: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 100px;
+  text-align: center;
 }
 
 .card {
@@ -99,11 +105,15 @@ button{
   cursor: pointer;
   outline: none;
   transition: all .4s ease-out;
+  position: relative;
+  z-index: 2;
 }
 
 button:hover{
   background-color: #6e40cb; 
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .justify-center{

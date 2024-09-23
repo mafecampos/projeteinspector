@@ -22,6 +22,11 @@ img {
   transform: translateX(-50%);
 }
 
+.detalhe {
+  z-index: 1; 
+  pointer-events: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -99,11 +104,15 @@ button{
   cursor: pointer;
   outline: none;
   transition: all .4s ease-out;
+  position: relative;
+  z-index: 2;
 }
 
 button:hover{
   background-color: #6e40cb;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .justify-center{
@@ -142,28 +151,4 @@ a:hover{
   padding: 10px;
   border-radius: 4px;
   display: none;
-}
-
-.image-container {
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 100px;
-  text-align: center;
-  z-index: -1;
 }
