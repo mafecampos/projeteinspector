@@ -7,11 +7,19 @@
 }
 
 body {
-  background-image: url("../images/bg-signin.jpg");
+  background-color: #ffedc3;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
-  
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container {
@@ -19,13 +27,15 @@ body {
   justify-content: center;
   width: 100%;
   margin-top: 100px;
+  text-align: center;
 }
 
 .card {
   background-color: #ffffff80;
   padding: 30px;
   border-radius: 4%;
-  box-shadow: 3px 3px 1px 0px #00000060
+  box-shadow: 3px 3px 1px 0px #7e7e7e80;
+  margin-top: 80px;
 }
 
 h1{
@@ -132,4 +142,28 @@ a:hover{
   padding: 10px;
   border-radius: 4px;
   display: none;
+}
+
+.image-container {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  z-index: -1;
 }
