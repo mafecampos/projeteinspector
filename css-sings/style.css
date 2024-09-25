@@ -5,6 +5,37 @@ body {
     background-color: #ffedc3;
 }
 
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #8c52ff;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .left-side div img{
+    margin-right: 20px;
+    color: white;
+}
+
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
 main {
     display: flex;
     flex-direction: column;
