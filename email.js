@@ -98,7 +98,7 @@ submitButton.addEventListener("click", function (event) {
   emailjs.init("_nLlRr78k-i6tpvEg");
 
   // Send the email to you with the form information
-  emailjs.send("service_ivlnrsp", "template_vor6p67", {
+  emailjs.send("service_ivlnrsp", "service_24bylqd",  "template_vor6p67", {
     from: senderEmail,
     to: recipientEmail,
     name: nome,
@@ -114,9 +114,9 @@ submitButton.addEventListener("click", function (event) {
   });
 
   // Send a confirmation email to the person who filled out the form
-  emailjs.send("service_ivlnrsp" , "template_2u9wif9", {
-    from: "inspectords06@gmail.com", // Use your email address as the sender
-    to: email,
+  emailjs.send("service_ivlnrsp", "service_24bylqd", "template_2u9wif9", {
+    from: recipientEmail,
+    to: senderEmail,
     name: nome,
     message: `A equipe INSPECTOR,agradece por entrar em contato conosco! Recebemos sua mensagem e responderemos assim que posssível.`
   })
