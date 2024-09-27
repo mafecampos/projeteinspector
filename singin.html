@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css-sings/singin.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <title>Singin</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/img/logo.png" alt="Logo" width="450" height="150">
+        <div class="detalhe">
+            <table>
+                <tr>
+               <td>
+                <img src="/img/9-removebg-preview.png" alt="cornerR" width="100%" height="100%">
+                <img src="/img/10-removebg-preview.png" alt="cornerL" width="100%" height="100%">
+               </td>
+               <tr>
+               </tr>
+            </table>
+    </div>
+        <div class="card">
+            <h1>Entrar</h1>
+            <div id="msgError"></div>
+
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required />
+                <label id="userLabel" for="usuario">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required />
+                <label id="senhaLabel" for="senha">Senha</label>
+            </div>
+
+            <div class="justify-center">
+                <button type="button">Entrar</button>
+            </div>
+
+            <div class="justify-center">
+                <hr />
+            </div>
+
+            <p>
+                Não tem uma conta?
+                <a href="singup.html"">Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js';
+        import { getAuth, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js';
+    
+        const firebaseConfig = {
+            apiKey: "AIzaSyCisvjUePWPgFr2BtrqIDNak-tGGmIiesY",
+            authDomain: "inspector-f0183.firebaseapp.com",
+            projectId: "inspector-f0183",
+            storageBucket: "inspector-f0183.appspot.com",
+            messagingSenderId: "53520677791",
+            appId: "1:53520677791:web:50807ecb53de66f05bdbaa",
+        };
+    
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+    
+        function login() {
+            const email = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+    
+            signInWithEmailAndPassword(auth, email, senha)
+                .then((response) => {
+                    console.log("success", response);
+                    window.location.href = "/html-sings/services.html";
+                })
+                .catch((error) => {
+                    console.log("error", error);
+                    alert("Erro ao fazer login: " + error.message);
+                });
+        }
+    
+        document.querySelector('button').addEventListener('click', login);
+    </script>        
+</body>
+</html>

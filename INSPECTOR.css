@@ -1,0 +1,251 @@
+body
+{
+  color: indigo;
+  background-color: #ffedc3 ;
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+}
+ul 
+{
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+a
+{
+  color: indigo; 
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  text-decoration: none;
+}
+.container
+{
+  padding: 0px 20px;
+}
+nav a:hover
+{
+  color: blueviolet;
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+}
+h3
+{
+  font-size: larger;
+  padding: 0px 20px;
+  color: indigo;  
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+}
+h2
+{
+  padding: 0px 20px;
+  color: indigo;  
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+}
+h4
+{
+  padding: 0px 20px;
+  color: indigo;  
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+}
+header img 
+{ 
+  width: 170px;
+  height: 50px;
+  justify-content:space-evenly;
+}
+footer img 
+{
+  width: 60px;
+  height: 60px;
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+}
+footer a
+{
+    margin: 2%;
+    text-align: center;
+}
+.quadrado
+{
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: 30px;
+    background-color: #ffda85;
+    width: 102%;
+    height: 70px;
+}
+.center
+{
+    justify-content: center;
+}
+.link 
+{
+    padding: 50px;
+}
+.img
+{
+    margin-right: 600px;
+}
+.inlay
+{
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgb(156, 71, 242);
+}
+td 
+{
+    padding: 0px 20px;
+    color: indigo;  
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+}
+.servicos h3
+{
+  text-align: center;
+}
+.servicos .workshop > p
+{
+   text-align: center;
+   color: indigo;  
+   font-family: "Aleo", serif;
+   font-optical-sizing: auto;
+}
+.servicos .modulos
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.infos
+{
+  background-color:rgb(195, 145, 243);
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+  transition: 0.3s;
+}
+.infos:hover
+{
+  background-color: rgb(174, 115, 230);
+}
+.bemvindos
+{
+  background-color:rgb(195, 145, 243);
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.bemvindos2
+{
+  background-color:rgb(195, 145, 243);
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.bemvindos:hover
+{
+  background-color: rgb(174, 115, 230);
+}
+.moduloum
+{
+  background-color:rgb(195, 145, 243);
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.moduloum:hover
+{
+  background-color: rgb(174, 115, 230);
+}
+.modulodois
+{
+  background-color:rgb(195, 145, 243);
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.modulodois:hover
+{
+  background-color: rgb(174, 115, 230);
+}
+.modulotres
+{
+  background-color:rgb(195, 145, 243);
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.modulotres:hover
+{
+  background-color: rgb(174, 115, 230);
+}
+.encerramento
+{
+  background-color:rgb(195, 145, 243);
+  width: 350px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+}
+.encerramento:hover
+{
+  background-color: rgb(174, 115, 230);
+}
+.iconinfo
+{
+  background-color: rgb(174, 115, 230);
+  border-radius: 14px;
+}
+.iconoie
+{
+  background-color: rgb(174, 115, 230);
+  border-radius: 14px;
+}
+.icon1
+{
+  background-color: rgb(174, 115, 230);
+  border-radius: 14px;
+}
+.icon2
+{
+  background-color: rgb(174, 115, 230);
+  border-radius: 14px;
+}
+.icon3
+{
+  background-color: rgb(174, 115, 230);
+  border-radius: 14px;
+}
+.icontchau
+{
+  background-color: rgb(174, 115, 230);
+  border-radius: 14px;
+}
+.sobrenos .topicos
+{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.sobrenos
+{
+  background-color:rgb(195, 145, 243);
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+  transition: 0.3s;
+}
